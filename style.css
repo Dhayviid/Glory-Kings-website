@@ -9,6 +9,7 @@ body {
     width: 100%;
     height: 100vh;
     z-index: 1;
+    /* overflow: hidden; */
 }
 a {
     text-decoration: none;
@@ -105,6 +106,58 @@ ul {
 {
     transform: scale(1.10);
 } 
+.concerts-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    padding-left: 70px;
+    justify-content: center;
+}
+.concerts-container .text-head {
+    font-size: 40px;
+    font-weight: 100;
+}
+.concerts {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 8px;
+    background: white;
+    width: 50%;
+    height: 90%;
+}
+.card:hover {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.card .image-container {
+    width: 100%;
+    height: 40%;
+}
+.card .image-container img{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+.card-text {
+    margin: 20px;
+}
+.card-text .f-text {
+    font-size: 13px;
+}
+.card p {
+    color: hsl(233, 8%, 62%);
+    font-size: 15px;
+}
+.card-text h3 {
+    font-weight: 400;
+}
 .contact-section {
     display: flex;
     justify-content: center;
@@ -141,7 +194,6 @@ ul {
 {
     display: inline-block;
     font-size: 25px;
-    color: white;
 }
 .contact-section .contact-info-item h4
 {
